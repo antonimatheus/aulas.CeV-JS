@@ -1,0 +1,36 @@
+body {
+    background: rgb(107, 107, 241);
+    font: normal 15pt Arial;
+}
+header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+section {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.57);
+
+}
+img {
+    padding: 10px;
+}
+input {
+    border:1px solid rgb(0, 0, 0);
+    border-radius:20px;
+    display:inline-block;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:13px;
+    padding:6px 10px;
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
