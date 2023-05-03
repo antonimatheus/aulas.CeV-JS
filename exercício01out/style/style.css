@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(43, 43, 203);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+section {
+    margin: 0 auto;
+    width: 450px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.523);
+}
+
+div#tela > p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#foto {
+    text-align: center;
+}
+
+footer > p {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
