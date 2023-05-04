@@ -3,7 +3,7 @@ function carregar() {
     var img = window.document.getElementById('img')
     var agora = new Date()
     var hora = agora.getHours()
-    var hora = 23
+    //var hora = 16
 
     horas.innerHTML = `<p>Agora são ${hora} horas!</p>`
     
