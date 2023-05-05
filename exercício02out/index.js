@@ -12,10 +12,12 @@ function verificar() {
       var img = document.createElement('img')
       img.setAttribute('id', 'foto')
       if (rsex[0].checked) {
+        document.body.style.backgroundColor = '#70c6e3'
         gênero = 'Homem'
+        
         if (idade >= 0 && idade < 10) {
             //criança
-            img.setAttribute('src', 'midia/foto-bebe-m.png')
+            img.setAttribute('src', 'midia/foto-bebe-m.png') 
         } else if (idade < 19) {
             //jovem
             img.setAttribute('src', 'midia/foto-adolecente-m.png')
@@ -27,6 +29,7 @@ function verificar() {
             img.setAttribute('src', 'midia/foto-idoso-m.png')
         }
       }else if (rsex[1].checked) {
+        document.body.style.backgroundColor = '#ffc0cb '
         gênero = 'Mulher'
         if (idade >= 0 && idade < 10) {
             //criança
