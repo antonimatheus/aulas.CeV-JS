@@ -16,18 +16,16 @@
 function enviar() {
     var tabu = document.getElementById('itxtt')
     var res = document.getElementById('seltab')
-    
     if (tabu.value.length == 0) {
-        window.alert('ERRO! Digite um número!')
+        window.alert('ERRO! Adicione um número!')
     } else {
-        let tab = Number(tabu.value)
         var c = 1
         res.innerHTML = ''
         while (c <= 10) {
+            var tab = Number(tabu.value)
             var item = document.createElement('option')
             item.text = `${tab} x ${c} = ${tab*c}`
             res.appendChild(item)
-            //item.value = `tabu${c}`
             c++
         }
     }
