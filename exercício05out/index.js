@@ -1,8 +1,10 @@
+var resu = document.getElementById('isel');
+
 function adicionar() {
     var num = document.getElementById('itxtn').value;
-    var resu = document.getElementById('isel');
+    
 
-    if (num == 0) {
+    if (num == '') {
         window.alert('Adicione um número!');
     } else {
         if (resu.querySelector(`option[value="${num}"]`) || num < 1 || num > 100) {
@@ -13,6 +15,17 @@ function adicionar() {
             item.text = `Número ${num} adicionado`;
             resu.appendChild(item);
         }
+    }  
+}
+
+function verificar() {
+    var options = resu.getElementsByTagName('option')
+    if (options.length == 0) {
+        window.alert('Nenhum número para VERIFICAR!')
+    } else {
+    var res = document.getElementById('res')
+    res.innerHTML = `Ao todo temos ${resu.length} números cadastrados.`
     }
 }
+
 
