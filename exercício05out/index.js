@@ -1,9 +1,8 @@
+
 var resu = document.getElementById('isel');
 
 function adicionar() {
     var num = document.getElementById('itxtn').value;
-    
-
     if (num == '') {
         window.alert('Adicione um número!');
     } else {
@@ -23,9 +22,25 @@ function verificar() {
     if (options.length == 0) {
         window.alert('Nenhum número para VERIFICAR!')
     } else {
-    var res = document.getElementById('res')
-    res.innerHTML = `Ao todo temos ${resu.length} números cadastrados.`
+        //ao todo temos .. números cadastrados.
+        var res = document.getElementById('res')
+        res.innerHTML = `Ao todo temos ${resu.length} números cadastrados.<br>`
+        //o maior número informado foi..
+        
+        //o menor número informado foi..
+
+        //somando todos os valores, temos..
+        /*var soma = 0;
+        for (var i = 0; i < options.length; i++) {
+            soma += parseInt(options[i].value);
+        }
+        res.innerHTML += ` Somando todos os valores, temos ${soma}.`;*/
+
+        //a média dos valores digitados foi de..
     }
 }
+
+
+
 
 
