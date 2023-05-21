@@ -1,4 +1,3 @@
-
 var resu = document.getElementById('isel');
 
 function adicionar() {
@@ -25,7 +24,9 @@ function verificar() {
         //ao todo temos .. números cadastrados.
         var res = document.getElementById('res')
         res.innerHTML = `Ao todo temos ${resu.length} números cadastrados.<br>`
+
         //o maior número informado foi..
+        res.innerHTML += `O maior número informado foi ${Math.max(...resu)}`
         
         //o menor número informado foi..
 
