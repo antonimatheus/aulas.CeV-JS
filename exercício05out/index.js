@@ -13,6 +13,8 @@ function adicionar() {
             item.text = `Número ${num} adicionado`;
             resu.appendChild(item);
         }
+        itxtn.value = ''
+        itxtn.focus()
     }  
 }
 
@@ -21,12 +23,24 @@ function verificar() {
     if (options.length == 0) {
         window.alert('Nenhum número para VERIFICAR!')
     } else {
+        res.innerHTML = ''
+        let maior = valores[0]
+        let menor = valores[0]
         //ao todo temos .. números cadastrados.
         var res = document.getElementById('res')
-        res.innerHTML = `Ao todo temos ${resu.length} números cadastrados.<br>`
-
+        res.innerHTML += `Ao todo temos ${resu.length} números cadastrados.<br>`
         //o maior número informado foi..
-        res.innerHTML += `O maior número informado foi ${Math.max(...resu)}`
+        for (let pos in valores) {
+            if (valores[pos] > maior) {
+                maior = valores[pos]
+            }
+            if (valores[pos] < menor) {
+                menor = valores[pos]
+            }
+        }
+        res.innerHTML += `O maior valor informado foi ${maior}`
+        res.innerHTML += `O menor valor informado foi ${menor}`
+        
         
         //o menor número informado foi..
 
