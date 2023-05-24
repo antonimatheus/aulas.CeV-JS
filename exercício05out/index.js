@@ -42,6 +42,7 @@ function verificar() {
             }
         }
         var media = tot / valores.length; // Calcula a média dos valores
+
         res.innerHTML += `Ao todo temos ${options.length} números cadastrados.<br>`
         res.innerHTML += `O maior valor informado foi ${maior}.<br>`; // Exibe o maior valor
         res.innerHTML += `O menor valor informado foi ${menor}.<br>`; // Exibe o menor valor
